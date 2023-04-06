@@ -16,3 +16,40 @@ h1,
 h2 {
     background-color: plum;
 }
+h5 ~ h6,
+ol,
+ul {
+    color: #333;
+    font-size: 32px;
+}
+.korea {
+    color: skyblue;
+}
+.japan,
+.canada {
+    color: crimson;
+}
+.incheon {
+    color: darkblue;
+}
+.leader {
+    color: purple;
+}
+li:nth-child(5) {
+    text-decoration: underline;
+}
+li:nth-child(2n) { /* odd: 홀수; even, 2n: 짝수 */
+    background-color: #eee;
+}
+li:nth-child(5n) {
+    background-color: #aaa;
+}
+[type="text"] {
+    background-color: aqua;
+}
+ul:nth-child(3) > li:nth-child(2):hover {
+    text-decoration: overline;
+}
+body > div:nth-child(8) > ul:nth-child(3) > li:nth-child(2) {
+    font-size: 8px;
+}
