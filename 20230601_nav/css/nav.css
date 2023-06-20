@@ -82,6 +82,7 @@ nav {
         backdrop-filter: blur(8px);
         height: 0;  /* 처음에 안 보이게 */
         transition: all 0.4s;
+        overflow: hidden;   /* height: 0인데도 내용이 넘치면 안 보이게 */
     }
     .nav-item {
         padding: 1em 0; /* item들의 위아래 여백 */
@@ -95,6 +96,7 @@ nav {
         visibility: visible;
         position: absolute; /* 햄버거 메뉴 공간을 차지하지 않게 .nav-logo를 가운데로 */
         right: 16px;    /* 햄버거 메뉴 원위치 */
+        cursor: pointer;    /* 손가락 */
     }
 
     /* .show-menu하면, .nav-list 보이게 */
