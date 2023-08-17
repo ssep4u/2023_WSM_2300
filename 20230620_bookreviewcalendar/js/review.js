@@ -41,7 +41,38 @@ const publisherDiv = document.getElementsByClassName("publisher")[1];
 publisherDiv.innerHTML = publisher;
 const bookImageDiv = document.getElementsByClassName("book-image")[0];
 bookImageDiv.innerHTML = `<img src="${bookImage}" />`
-
+const readDateDiv = document.getElementsByClassName("read-date")[1];
+let now = "2030년 8월 17일";
+now = new Date();   //현재 날짜와 시각 객체
+let year = now.getFullYear();
+let month = now.getMonth(); //8월이 7로 나와. return 실제 월 -1
+let date = now.getDate();
+let day = now.getDay();
+// if (day == 0) {
+//     day = "일요일";
+// }
+// else if (day == 1) {
+//     day = "월요일";
+// }
+// else if (day == 2) {
+//     day = "화요일";
+// }
+// else if (day == 3) {
+//     day = "수요일";
+// }
+// else if (day == 4) {
+//     day = "목요일";
+// }
+// else if (day == 5) {
+//     day = "금요일";
+// }
+// else if (day == 6) {
+//     day = "토요일";
+// }
+weeks = ["일", "월", "화", "수", "목", "금", "토"];
+day = weeks[day] + "요일";
+now = `${year}년 ${month+1}월 ${date}일 ${day}`;
+readDateDiv.innerHTML = now;
 
 // let name = "최유진";
 // console.log(`안녕, ${name}`);
