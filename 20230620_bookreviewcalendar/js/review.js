@@ -34,7 +34,7 @@ console.log(title, author, publisher, bookImage);
 // -> HTML에 넣자
 //HTML 요소 -> js 변수
 const titleDiv = document.getElementsByClassName("title")[1];
-titleDiv.innerHTML = `<u>${title}</u>`;
+titleDiv.innerHTML = title;
 const authorDiv = document.getElementsByClassName("author")[1];
 authorDiv.innerHTML = author;
 const publisherDiv = document.getElementsByClassName("publisher")[1];
