@@ -1,0 +1,20 @@
+main {
+    margin-top: calc(44px + 100px);
+}
+.title.flex-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    font-size: 2rem;
+}
+.weekday.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* delete me */
+main * {
+    border: 2px solid black;
+}
