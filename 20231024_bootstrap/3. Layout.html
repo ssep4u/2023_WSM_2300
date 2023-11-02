@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 3. Layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="display-1">Layout</header>
+    <div class="container bg-primary my-2">.container</div>
+    <div class="container-sm bg-primary my-2">.container-sm</div>
+    <div class="container-md bg-primary my-2">.container-md</div>
+    <div class="container-lg bg-primary my-2">.container-lg</div>
+    <div class="container-xl bg-primary my-2">.container-xl</div>
+    <div class="container-xxl bg-primary my-2">.container-xxl</div>
+    <div class="container-fluid bg-primary my-2">.container-fluid</div>
+    <hr>
+    <header class="display-2">All breakpoints</header>
+    .container>.row>.col여러개
+    .container>.row>.col{col 1-$}*6
+    <div class="container-sm text-center">
+        <div class="row">
+            <div class="col bg-secondary border border-3">col 1-1</div>
+            <div class="col bg-secondary border border-3">col 1-2</div>
+            <div class="col bg-secondary border border-3">col 1-3</div>
+            <div class="col bg-secondary border border-3">col 1-4</div>
+            <div class="col bg-secondary border border-3">col 1-5</div>
+            <div class="col bg-secondary border border-3">col 1-6</div>
+        </div>
+        <div class="row">
+            <div class="col bg-secondary border border-3">col 2-1</div>
+            <div class="col bg-secondary border border-3">col 2-2</div>
+            <div class="col bg-secondary border border-3">col 2-3</div>
+        </div>
+    </div>
+    <hr>
+    <header class="display-2">column width</header>
+    .container.text-center>.row>.col.bg-info.border.border-3{col 1-$}*4
+    <div class="container-sm text-center">
+        <div class="row">
+            <div class="col-4 bg-info border border-3">col 1-1</div>
+            <div class="col-2 bg-info border border-3">col 1-2</div>
+            <div class="col-4 bg-info border border-3">col 1-3</div>
+            <div class="col-2 bg-info border border-3">col 1-4</div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-lg-3 bg-info border border-3">col 2-1</div>
+            <div class="col-2 col-lg-3 bg-info border border-3">col 2-2</div>
+            <div class="col-4 col-lg-3 bg-info border border-3">col 2-3</div>
+            <div class="col-2 col-lg-3 bg-info border border-3">col 2-4</div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-sm-3 bg-info border border-3">col 3-1</div>
+            <div class="col-4 col-sm-6 bg-info border border-3">col 3-2</div>
+            <div class="col-4 col-sm-3 bg-info border border-3">col 3-3</div>
+        </div>
+        <div class="row">
+            <div class="col bg-info border border-3">col 4-1</div>
+            <div class="col-6 bg-info border border-3">col 4-2</div>
+            <div class="col bg-info border border-3">col 4-3</div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-info border border-3">col 5-1</div>
+            <div class="col-auto bg-info border border-3">col 5-25-25-2</div>
+            <div class="col bg-info border border-3">col 5-3</div>
+        </div>
+    </div>
+    <hr>
+    <header class="display-2">Row columns</header>
+    .container-sm.text-center>.row>.col.bg-warning.border.border-3{col 1-$}*4
+    <div class="container-sm text-center">
+        <div class="row row-cols-2">
+            <div class="col bg-warning border border-3">col 1-1</div>
+            <div class="col bg-warning border border-3">col 1-2</div>
+            <div class="col bg-warning border border-3">col 1-3</div>
+            <div class="col bg-warning border border-3">col 1-4</div>
+        </div>
+        <div class="row row-cols-3">
+            <div class="col bg-warning border border-3">col 2-1</div>
+            <div class="col bg-warning border border-3">col 2-2</div>
+            <div class="col bg-warning border border-3">col 2-3</div>
+            <div class="col bg-warning border border-3">col 2-4</div>
+        </div>
+        <div class="row row-cols-auto">
+            <div class="col bg-warning border border-3">col 3-1</div>
+            <div class="col bg-warning border border-3">col 3-2</div>
+            <div class="col bg-warning border border-3">col 3-3</div>
+            <div class="col bg-warning border border-3">col 3-4</div>
+        </div>
+        <div class="display-3">
+            <576px: 1열,>=576px: 2열, >=768px: 3열, >=992px: 4열
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col bg-warning border border-3">col 4-1</div>
+            <div class="col bg-warning border border-3">col 4-2</div>
+            <div class="col bg-warning border border-3">col 4-3</div>
+            <div class="col bg-warning border border-3">col 4-4</div>
+        </div>
+    </div>
+    <hr>
+    <header class="display-2">justify-content</header>
+    .container-sm.text-center>.row>.col.bg-danger.border.border-3{col 1-$}*3
+    <div class="container-sm text-center">
+        <div class="row justify-content-between">
+            <div class="col-2 bg-danger border border-3">col 1-1</div>
+            <div class="col-2 bg-danger border border-3">col 1-2</div>
+            <div class="col-2 bg-danger border border-3">col 1-3</div>
+        </div>
+    </div>
+
+
+
+
+
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nobis! Temporibus quod qui assumenda
+    aspernatur illum repellendus suscipit quas provident autem? Similique accusamus quis atque, eaque dolore blanditiis
+    pariatur sunt dolorum soluta, repellat ratione ex ea voluptatem aperiam vero illo consequatur. Nesciunt dignissimos
+    rerum deserunt mollitia reprehenderit, praesentium excepturi voluptates sapiente aspernatur, iure, nihil voluptate
+    laborum vel qui? Eligendi consequuntur dolorum libero. Eveniet similique neque quod libero, accusantium rem illo
+    officia earum maiores sed officiis eum reprehenderit adipisci dolore dolorum ut maxime, reiciendis dolor minima
+    obcaecati cum commodi in. Eum illum, earum laboriosam at reprehenderit atque temporibus facilis voluptatem
+    repudiandae aliquid accusantium nemo pariatur ab aliquam possimus odio ipsam autem, fugiat id dolorem expedita
+    dignissimos ullam velit exercitationem. Nisi voluptatum non aliquid ea ducimus doloribus beatae exercitationem vero
+    reprehenderit fuga earum veritatis eum amet corporis ipsam, consequuntur libero dolore illum? Hic ratione ullam, ea
+    commodi est voluptatem distinctio quisquam modi assumenda maxime! Provident tempore ea harum minus unde voluptatibus
+    exercitationem. Culpa expedita minus perferendis officiis impedit distinctio, totam alias vel tempora maxime. Facere
+    soluta quos ipsa distinctio nobis. Hic iste dolores magnam accusamus ullam debitis in recusandae modi, perferendis
+    odio adipisci similique veritatis tempora totam officia quibusdam expedita magni fugiat, saepe consequuntur nulla at
+    architecto. Sunt minima non quaerat tempore neque veniam, fuga veritatis! Repellendus veniam nostrum facere quos!
+    Voluptas voluptatem aliquid architecto temporibus dicta, adipisci reprehenderit fuga molestias, dolor dolore quos
+    quasi labore quas officiis. Vero velit soluta unde natus voluptas fugiat quisquam nulla quas aspernatur, ducimus
+    aliquid. Ipsam odit, repellat suscipit quasi aut temporibus debitis impedit aspernatur obcaecati sed eius molestiae,
+    vitae quaerat maxime eveniet aperiam deleniti. Beatae eos ex reprehenderit nisi dicta quas ab, id sequi corrupti
+    enim consequatur eligendi, eveniet quisquam nemo ipsam consequuntur molestiae! Optio iusto fuga fugiat tenetur, quos
+    dolorem quidem rem quo velit voluptas, minus harum voluptates, dolorum aspernatur impedit. Autem libero quia eos
+    tempore? Odio ipsum dolores nobis ullam reprehenderit rem, expedita eaque, suscipit consequatur ratione minima
+    veritatis excepturi tempore dignissimos rerum quaerat atque. Quasi, animi ut. Officia ad dicta accusamus laborum
+    reiciendis maiores nemo delectus adipisci, consequatur soluta. Odio deleniti velit est quas voluptatibus inventore
+    ad cupiditate rerum recusandae blanditiis, perferendis omnis repudiandae necessitatibus nemo ea! Qui facere
+    similique, excepturi a quas explicabo ex ad, repellendus sint necessitatibus voluptates. Corrupti beatae maxime
+    doloribus amet non suscipit sunt voluptas, voluptates animi reprehenderit quo quia rerum harum pariatur minima!
+    Veniam amet reiciendis doloribus voluptatibus autem voluptas dolorum modi praesentium incidunt odit rerum
+    exercitationem quas facere suscipit ipsam libero error, consectetur explicabo tempore odio harum dicta laudantium
+    saepe! Ipsam, amet, excepturi praesentium eligendi laborum, corporis beatae deserunt sit itaque nostrum dicta alias
+    odit? Neque sint voluptatem fugiat molestias numquam eos saepe temporibus autem nesciunt omnis ex deserunt soluta
+    possimus deleniti, odio id ut? Cum vel optio suscipit cumque est ea illo dignissimos quam mollitia quia saepe
+    veritatis numquam, nam at odio molestiae ipsam quis laudantium eos debitis. Minima fuga debitis ducimus id hic
+    necessitatibus, quo excepturi pariatur, autem non quod nisi porro a repellat inventore rerum amet rem, saepe
+    doloribus expedita. Commodi consequatur tempore id sit nulla. Dolor ullam nesciunt aspernatur deleniti eos, velit
+    qui quisquam excepturi rerum itaque enim odit ab sapiente, libero laborum voluptate similique quasi, perspiciatis
+    iste? Perspiciatis sit amet temporibus blanditiis natus. Illo animi inventore ea at blanditiis ut, impedit ex quasi
+    accusantium, sunt amet nisi quaerat totam ab soluta. Distinctio rem quasi id iste dolor rerum expedita, modi velit
+    voluptas consequatur earum veniam totam debitis, architecto eius ab! Explicabo inventore deleniti laborum, non atque
+    architecto exercitationem odio ab libero suscipit quidem dolores dignissimos, beatae asperiores maxime error
+    deserunt! Nulla quia quisquam eos delectus hic laudantium consequatur voluptatum in dolore, ducimus rem modi ea
+    voluptatem quod harum reiciendis beatae doloremque perferendis ipsa quis. Accusamus numquam reprehenderit aspernatur
+    quam accusantium. Explicabo illo nostrum asperiores eos, nisi blanditiis quibusdam perferendis vitae porro unde,
+    voluptas officia fugiat eum quis? Eos facilis eveniet dicta velit, tempora inventore cumque, ratione blanditiis modi
+    quod officiis unde! Deserunt perspiciatis numquam, nisi laborum officia dolores repudiandae doloremque. Quasi ullam
+    ea explicabo blanditiis aperiam. Mollitia non eaque rerum. Corporis sint dolor nulla ex enim aut quidem hic repellat
+    nam voluptates voluptatum dolores officiis cumque, laudantium aperiam ab consectetur eius. Incidunt unde laborum
+    consectetur accusantium hic exercitationem molestias sequi temporibus, dignissimos dolore modi repudiandae
+    quibusdam, ipsam pariatur eos aliquid eius fugiat inventore nesciunt magni corporis corrupti dolorem harum? Quia
+    mollitia corporis minus officia tempora repellendus temporibus, quos vel ipsum libero tenetur, blanditiis placeat
+    aspernatur atque excepturi. Deserunt, architecto facilis dolorem quas repudiandae dolorum ipsam, perspiciatis nemo a
+    sit iste. Distinctio voluptatum officiis molestiae voluptate saepe, et tempora similique aliquid cum nulla
+    repellendus itaque nisi corrupti error ex consequuntur maiores necessitatibus! Animi, tenetur officiis a excepturi
+    fugit accusamus repudiandae porro ab quod quam necessitatibus omnis eius quidem facere at, eum alias maxime minus
+    enim dolor, sit adipisci laudantium deleniti! Consequatur laudantium alias consectetur ducimus molestiae, deserunt
+    ut nam. Qui harum debitis a fugit laboriosam aut eius reprehenderit? Dignissimos sunt architecto possimus ipsum
+    asperiores odit magni omnis fuga qui totam voluptatibus sequi mollitia, odio praesentium soluta! Commodi eaque harum
+    facilis exercitationem natus ipsa perferendis beatae ut sequi non sit similique neque maxime aliquid velit rem,
+    tenetur saepe distinctio deserunt repellat, rerum nam dignissimos ex praesentium! Adipisci accusamus fuga excepturi
+    delectus amet voluptatibus veritatis voluptas rerum ea in earum nobis eum quo suscipit maxime quas mollitia esse sed
+    minima, autem quod architecto molestias corrupti obcaecati! Quisquam iure ipsum laudantium iste molestiae incidunt
+    ea adipisci vel, veniam facilis nesciunt a nam odio, vero corrupti. Accusamus modi minus quam quia enim dolorum,
+    cumque ipsam quis eveniet in libero nobis iste necessitatibus voluptate voluptas repellat ipsa voluptatibus! Ad
+    tempora mollitia, quidem impedit recusandae voluptate, eius ipsum soluta harum dolores, sit voluptatem commodi nisi.
+    Laborum dolorem recusandae fuga corrupti tenetur earum sint illo, suscipit veniam cumque atque corporis voluptas
+    vel, voluptatem, eveniet error nemo odit nam temporibus sapiente itaque? Repudiandae porro, minus numquam quam ipsum
+    consequatur magni nam natus, modi deserunt rerum labore blanditiis nulla similique? Inventore.
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
